@@ -1,0 +1,25 @@
+<div class="form-box">
+    <h3>Update Motorcycle</h3>
+    <div class="form" [formGroup]="formControlGroup">
+        <mat-form-field class="form-width" appearance="legacy">
+            <mat-label>Brand</mat-label>
+            <input matInput placeholder="" formControlName="brand">
+            <mat-icon matSuffix>two_wheeler</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="form" [formGroup]="formControlGroup">
+        <mat-form-field class="form-width" appearance="legacy">
+            <mat-label>Model</mat-label>
+            <input matInput placeholder="" formControlName="model">
+            <mat-icon matSuffix>two_wheeler</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="motorcycle-update">
+        <div class="button-update-motorcycle">
+            <button mat-raised-button color="primary" (click)="updateMotorcycle()">Update1</button>
+        </div>
+        <div class="button-back-motorcycle">
+            <button mat-stroked-button color="primary" (click)="goBack()">Back1</button>
+        </div>
+    </div>
+</div>
