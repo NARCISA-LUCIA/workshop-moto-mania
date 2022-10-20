@@ -1,7 +1,7 @@
 import { EditMotorcycleComponent } from './dialog-motorcycle/edit-motorcycle/edit-motorcycle.component';
 import { UpdateMotorcycleComponent } from './update-motorcycle/update-motorcycle.component';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { DialogMotorcycleComponent } from './dialog-motorcycle/dialog-motorcycle.component';
+import { DialogMotorcycleComponent } from './dialog-motorcycle/dialog-motorcycle/dialog-motorcycle.component';
 
 import { MotorcycleService } from './../service/motorcycle-service';
 import { Motorcycle } from '../model/motorcycle';

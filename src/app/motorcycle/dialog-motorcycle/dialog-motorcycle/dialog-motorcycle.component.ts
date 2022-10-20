@@ -1,4 +1,4 @@
-import { EditMotorcycleComponent } from './edit-motorcycle/edit-motorcycle.component';
+
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Component, Inject, OnInit } from '@angular/core';
 
@@ -9,8 +9,8 @@ import { Component, Inject, OnInit } from '@angular/core';
 })
 export class DialogMotorcycleComponent implements OnInit {
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    public dialogRef: MatDialogRef<EditMotorcycleComponent>
+    public dialogRef: MatDialogRef<DialogMotorcycleComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
 
   ngOnInit(): void {}

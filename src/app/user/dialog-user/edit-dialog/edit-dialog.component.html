@@ -1,0 +1,49 @@
+
+<div class="form-container">
+    <div class="form-box">
+        <h3>Update User</h3>
+        <div class="form" [formGroup]="data.formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="" formControlName="firstName">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="data.formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="" formControlName="lastName">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+        </div>
+    
+        <div class="form" [formGroup]="data.formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Address</mat-label>
+                <input matInput placeholder="" formControlName="address">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form-email-phone" [formGroup]="data.formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="" formControlName="email">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+     
+        <div class="form-email-phone" [formGroup]="data.formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Phone</mat-label>
+                <input matInput placeholder="" formControlName="phone">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+        </div>
+    </div>
+        <div class = "button-update">
+            <button mat-raised-button color="warn" (click) = "onCancel()">Cancel</button>
+            <button mat-raised-button color="primary" [mat-dialog-close]="data">Update</button>
+        </div>
+        </div>
+    </div>
+    
+    
