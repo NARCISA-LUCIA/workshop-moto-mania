@@ -25,7 +25,7 @@ export class MotorcycleComponent implements OnInit {
     'enginePower',
     'fabricationYear',
     'edit',
-    'remove',
+    'remove',                               
   ];
   motorcycle: Motorcycle[] = [];
   dataSource: MatTableDataSource<Motorcycle>;

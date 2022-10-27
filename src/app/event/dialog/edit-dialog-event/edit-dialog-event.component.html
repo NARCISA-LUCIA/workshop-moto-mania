@@ -1,0 +1,29 @@
+<div class="form-container" [formGroup]="data.formControlGroup">
+    <div class="form-box">
+        <h3>Edit Event</h3>
+        <mat-form-field class="form-width" appearance="legacy">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+            <mat-icon matSuffix>two_wheeler</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="form-width" appearance="legacy">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="datepicker" formControlName="date">
+            <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+            <mat-datepicker #datepicker>
+                <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                </mat-datepicker-actions>
+            </mat-datepicker>
+        </mat-form-field>
+    </div>
+    <div class="event-update">
+        <div class="button-back-event">
+            <button mat-stroked-button color="accent" (click)="onClose()"> Close</button>
+        </div>
+        <div class="button-update-event">
+            <button mat-raised-button color="primary" [mat-dialog-close]="data">Update</button>
+        </div>
+    </div>
+</div>
