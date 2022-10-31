@@ -1,0 +1,13 @@
+table{
+    width:100%;
+}
+
+.main-container{
+    padding: 20px;
+    background-color:rgb(224,224,224);
+    height:100%;
+}
+
+.add-user-button{
+    margin-bottom: 20px;
+}

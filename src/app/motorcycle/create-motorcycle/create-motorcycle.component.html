@@ -1,0 +1,51 @@
+<div class="box">
+    <div class="form-box">
+        <h3>Add Motorcycle</h3>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="legacy">
+                <mat-label>Brand</mat-label>
+                <input matInput placeholder="" formControlName="brand">
+                <mat-icon matSuffix>two_wheeler</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="legacy">
+                <mat-label>Model</mat-label>
+                <input matInput placeholder="" formControlName="model">
+                <mat-icon matSuffix>two_wheeler</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="legacy">
+                <mat-label>Color</mat-label>
+                <input matInput placeholder="" formControlName="color">
+                <mat-icon matSuffix>two_wheeler</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="legacy">
+                <mat-label>Engine Capacity</mat-label>
+                <input matInput placeholder="" formControlName="engineCapacity">
+                <mat-icon matSuffix>two_wheeler</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="legacy">
+                <mat-label>Engine enginePower</mat-label>
+                <input matInput placeholder="" formControlName="enginePower">
+                <mat-icon matSuffix>two_wheeler</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="legacy">
+                <mat-label>Fabrication Year</mat-label>
+                <input matInput placeholder="" formControlName="fabricationYear">
+                <mat-icon matSuffix>two_wheeler</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="button-create">
+            <button mat-raised-button color="accent" (click)="createMotorcycle()">Submit New Motorcycle</button>
+            <button mat-raised-button color="primary" (click)="goBack()">Back</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-box {
+  box-shadow: 0 0 50px #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-width {
+  width: 100%;
+}
+
+.form-email-phone {
+  display: flex;
+  gap: 10px;
+}
+
+.button-user {
+  display: flex;
+  gap: 20px;
+}
+
+
