@@ -65,15 +65,6 @@ export class MotorcycleComponent implements OnInit {
     });
   }
 
-  // openDialogEdit(motorcycle: Motorcycle): void {
-  //   const dialogRef: MatDialogRef<EditMotorcycleComponent, any> =
-  //     this.dialog.open(EditMotorcycleComponent, {
-  //       data: { motorcycle },
-  //     });
-
-  //   // console.log(motorcycle.brand);
-  // }
-
   openDialogEdit(motorcycle: Motorcycle): void {
     const formControlGroup = this.formBuilder.group({
       id: new FormControl(motorcycle.id),

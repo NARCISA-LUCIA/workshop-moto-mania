@@ -26,9 +26,6 @@ export class UpdateMotorcycleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.motoService.getAllMotorcycle().subscribe((result) => {
-    //   console.log('Get all motorcycle = ', result);
-    // });
     let motorcycleId = this.route.snapshot.params['id'];
     console.log('motorcycleId' + motorcycleId);
     this.motoService.get(motorcycleId).subscribe((result) => {
