@@ -1,0 +1,47 @@
+
+<div class="form-container">
+    <div class="form-box">
+        <h3>Update Event</h3>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="" formControlName="name">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="datepicker" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                  <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                  </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+        </div>
+    
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Location</mat-label>
+                <input matInput placeholder="" formControlName="location">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form" [formGroup]="formControlGroup">
+            <mat-form-field class="form-width" appearance="fill">
+                <mat-label>Organizer</mat-label>
+                <input matInput placeholder="" formControlName="organizer">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+    </div>
+        <div class = "button-update">
+            <button mat-raised-button color="primary"(click)="updateEvent()">Update Event</button>
+            <button mat-raised-button color="warn" (click)="goBack()">Back</button>
+        </div>
+        </div>
+    </div>
+    
+    

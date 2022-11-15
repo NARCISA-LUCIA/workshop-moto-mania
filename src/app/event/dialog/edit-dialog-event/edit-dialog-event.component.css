@@ -1,0 +1,19 @@
+.form-box {
+  box-shadow: 0 0 50px #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+input {
+  display: flex;
+  gap: 20px;
+}
+
+.event-update {
+  display: flex;
+  gap: 20px;
+}

@@ -1,3 +1,6 @@
+import { UpdateEventComponent } from './event/update-event/update-event.component';
+import { CreateEventComponent } from './event/create-event/create-event.component';
+import { EventComponent } from './event/event.component';
 import { UpdateUserComponent } from './user/update-user/update-user.component';
 import { CreateUserComponent } from './user/create-user/create-user.component';
 import { UserComponent } from './user/user.component';
@@ -16,6 +19,9 @@ const routes: Routes = [
   {path: "user", component: UserComponent },
   {path: "user/create", component: CreateUserComponent },
   {path: "user/:id/update", component: UpdateUserComponent},
+  {path: "event", component: EventComponent},
+  {path: "event/create", component: CreateEventComponent},
+  {path: "event/:id/update", component: UpdateEventComponent},
 ];
 
 
